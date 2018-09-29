@@ -1,5 +1,12 @@
 apply plugin: 'java-library'
 
+ext {
+    bintrayName = 'parcelable-annotation'
+    libraryDescription = 'The annotation used in parcelable api'
+    libraryVersion = parcelable_annotation_version
+}
+apply from: '../bintray.gradle'
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 }

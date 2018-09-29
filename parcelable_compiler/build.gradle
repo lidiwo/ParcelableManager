@@ -1,5 +1,12 @@
 apply plugin: 'java-library'
 
+ext {
+    bintrayName = 'parcelable-compiler'
+    libraryDescription = 'A compiler for ParcelableManager to find parcelable'
+    libraryVersion = parcelable_compiler_version
+}
+apply from: '../bintray.gradle'
+
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.squareup:javapoet:1.7.0'

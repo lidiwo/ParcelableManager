@@ -1,5 +1,12 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayName = 'parcelable-core'
+    libraryDescription = 'A parcelable for android'
+    libraryVersion = parcelable_core_version
+}
+apply from: '../bintray.gradle'
+
 android {
     compileSdkVersion 28
 
