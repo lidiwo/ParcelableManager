@@ -1,0 +1,1 @@
+include ':app', ':parcelable_annotation', ':parcelable_compiler', ':parcelable_core'
