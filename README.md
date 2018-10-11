@@ -1,5 +1,7 @@
 ```
-    一个用于帮助 Android App 进行对象快速Parcelable框架,给需要序列化的Bean对象添加@Parcelable 注解，即可完成复杂、麻烦的Android原生序列化Parcelable
+    一个用于帮助 Android App 进行对象快速Parcelable框架,给需要序列化的Bean对象添加@Parcelable 注解，
+
+    即可完成复杂、麻烦的Android原生序列化Parcelable
 ```
 #### 最新版本
 
@@ -62,7 +64,7 @@ StudentBean bean = getIntent().getParcelableExtra("Student");
 
 1. **被@Parcelable注解的对象必须要有无参构造函数**
 2. **被@Parcelable注解的对象有父类的时候，父类可以不使用@Parcelable注解**
-3. **被@Parcelable注解的对象字段中引入了其他引用对象的时候，改对象必须使用@Parcelable注解**
+3. **被@Parcelable注解的对象字段中引入了其他引用对象的时候，该对象必须使用@Parcelable注解**
 
 #### 四、问题反馈
 
