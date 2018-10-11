@@ -46,7 +46,7 @@ public class StudentBean {
 StudentBean bean=new StudentBean();
 
 Intent intent=new Intent(this,XxxxActivity.class);
-**intent.putExtra("Student", ParcelableManager.createParcelable(bean));**
+intent.putExtra("Student", ParcelableManager.createParcelable(bean));
 startActivity(intent);
 
 //获取序列化对象
@@ -60,9 +60,9 @@ StudentBean bean = getIntent().getParcelableExtra("Student");
 
 #### 三、使用注意事项
 
-1.**被@Parcelable注解的对象必须要有无参构造函数**
-2.**被@Parcelable注解的对象有父类的时候，父类可以不使用@Parcelable注解**
-3.**被@Parcelable注解的对象字段中引入了其他引用对象的时候，改对象必须使用@Parcelable注解**
+1. **被@Parcelable注解的对象必须要有无参构造函数**
+2. **被@Parcelable注解的对象有父类的时候，父类可以不使用@Parcelable注解**
+3. **被@Parcelable注解的对象字段中引入了其他引用对象的时候，改对象必须使用@Parcelable注解**
 
 #### 四、问题反馈
 
